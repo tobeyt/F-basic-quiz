@@ -11,7 +11,7 @@ const getUserById = async (userId) => {
 };
 
 // eslint-disable-next-line consistent-return
-const getEducationsByUserid = async (userId) => {
+const getEducationsByUserId = async (userId) => {
   try {
     const response = await fetch(`${baseURL}/users/${userId}/educations`);
     return await response.json();
@@ -20,4 +20,4 @@ const getEducationsByUserid = async (userId) => {
   }
 };
 
-export { getUserById, getEducationsByUserid };
+export { getUserById, getEducationsByUserId };
