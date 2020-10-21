@@ -2,63 +2,6 @@
 @import "mixins";
 @import "reboot";
 
-.app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $white;
-  padding: 40px;
-  margin: 100px;
-
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 4px solid $gray-light;
-    width: 100%;
-
-    .avatar {
-      margin-top: -90px;
-      width: $image-size;
-      height: $image-size;
-      border-radius: 50%;
-    }
-
-    .hello {
-      font-size: 2.1rem;
-      font-weight: bolder;
-      margin-bottom: 0;
-    }
-
-    .description {
-      font-size: 1.5rem;
-      font-weight: bolder;
-    }
-  }
-  .content {
-    h2 {
-      color: $primary-color;
-    }
-    .education-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      li {
-        display: flex;
-        justify-content: space-between;
-        margin: 12px 0;
-        div {
-          flex-basis: 80%;
-          background-color: $gray-light;
-          padding: 5px 5px 0 0;
-          span {
-            font-weight: bolder;
-            font-size: 1.15rem;
-          }
-        }
-      }
-    }
-  }
-}
+@import "app";
+@import "header";
+@import "educations";

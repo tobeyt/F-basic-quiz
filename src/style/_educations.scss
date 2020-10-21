@@ -1,0 +1,25 @@
+.content {
+  h2 {
+    color: $primary-color;
+  }
+}
+.education-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+  }
+}
+
+.education-li-content {
+  flex-basis: 80%;
+  background-color: $gray-light;
+  padding: 5px 5px 0 0;
+}
+.education-li-title {
+  font-weight: bolder;
+  font-size: 1.15rem;
+}
