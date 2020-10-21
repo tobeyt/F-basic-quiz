@@ -19,6 +19,7 @@ const renderAboutMe = (description) => {
 };
 
 const renderEducation = (userEducationsInfo) => {
+  $(".education-title").html("EDUCATION");
   let educationLiEle = "";
   userEducationsInfo.forEach(
     // eslint-disable-next-line no-return-assign
