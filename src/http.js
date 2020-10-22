@@ -1,21 +1,13 @@
 const baseURL = "http://localhost:8080/";
 
-const getUserById = async (userId) => {
-  try {
-    const response = await fetch(`${baseURL}/users/${userId}`);
-    return await response.json();
-  } catch (e) {
-    console.error(e);
-  }
+const getUserById = (userId) => {
+  return fetch(`${baseURL}/users/${userId}`).then((res) => res.json());
 };
 
-const getEducationsByUserId = async (userId) => {
-  try {
-    const response = await fetch(`${baseURL}/users/${userId}/educations`);
-    return await response.json();
-  } catch (e) {
-    console.error(e);
-  }
+const getEducationsByUserId = (userId) => {
+  return fetch(`${baseURL}/users/${userId}/educations`).then((res) =>
+    res.json()
+  );
 };
 
 export { getUserById, getEducationsByUserId };

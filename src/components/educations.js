@@ -14,7 +14,7 @@ function getEducationLiElement(userEducationsInfo) {
   );
 }
 
-export const renderEducations = (userEducationsInfo) => {
+export default (userEducationsInfo) => {
   $(".education-title").html("EDUCATION");
   $(".education-content").append(getEducationLiElement(userEducationsInfo));
 };

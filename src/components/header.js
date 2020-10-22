@@ -1,4 +1,4 @@
-export const renderHeader = (name, age, avatar) => {
+export default (name, age, avatar) => {
   $(".avatar").attr("src", avatar);
   $(".hello").html("HELLO,");
   $(".description").html(
