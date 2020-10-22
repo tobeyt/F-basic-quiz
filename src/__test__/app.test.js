@@ -1,5 +1,6 @@
 import { getEducationsByUserId, getUserById } from "../http";
 
+// TODO GTB-2: - 这里可以使用http中定义的baseURL
 const baseURL = "http://localhost:8080/";
 
 describe("get user by user id", () => {

@@ -10,6 +10,15 @@
     <title>Resume</title>
   </head>
   <body>
+    <!-- TODO GTB-1: * 页面还原度很高，唯一一点就是education content那里左边需要padding -->
+    <!-- TODO GTB-1: * user和education都从后端获取数据且展示在了前端，没有异常 -->
+    <!-- TODO GTB-2: * 有写api层的测试，且测得比较全面，但是测试文件名和被测文件名没有对齐 -->
+    <!-- TODO GTB-3: * 使用了scss及其部分特性（嵌套，变量），且对sccs进行了拆分，且使用了flex布局 -->
+    <!-- TODO GTB-3: * 页面结构划分合理，语义化标签使用较好 -->
+    <!-- TODO GTB-3: * JS抽取了http请求层，并按模块划分了js，也使用到了较多ES6语法，方法拆分也比较细 -->
+    <!-- TODO GTB-4: * 有小步提交，message还可以优化 -->
+    <!-- TODO GTB-4: * scss，js拆分做的也比较好，没有长方法和深嵌套 -->
+    <!-- TODO GTB-4: * eslint 存在error -->
     <div class="app">
       <header class="header">
         <img src="" alt="" class="avatar" />
@@ -26,6 +35,7 @@
           <ul class="education-content"></ul>
         </section>
       </main>
+      <!-- TODO GTB-4: - jquery可以通过npm方式引入 -->
       <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
       <script src="src/app.js"></script>
     </div>
